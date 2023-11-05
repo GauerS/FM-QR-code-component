@@ -1,1 +1,1 @@
-# FM-QR-code-component
+# FM-challenges
