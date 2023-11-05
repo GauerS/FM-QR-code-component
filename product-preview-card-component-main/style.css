@@ -8,8 +8,6 @@
     --white: hsl(0, 0%, 100%);
 }
 
-/* font-family: 'Fraunces', serif;
-font-family: 'Montserrat', sans-serif; */
 body {
     display: flex;
     align-items: center;
@@ -69,4 +67,10 @@ h1 {
 .content button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    color: var(--white);
+    background-color: var(--dark-cyan);
+}
+
+.content button:hover {
+    background-color: var(--very-dark-blue);
 }
