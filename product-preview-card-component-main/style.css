@@ -58,6 +58,7 @@ h1 {
     font-weight: 700;
     color: var(--very-dark-blue);
     font-size: 2rem;
+    line-height: 1;
 }
 
 .content h1+p {
@@ -66,16 +67,25 @@ h1 {
     line-height: 1.75;
 }
 
+.content p:last-of-type {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .pricenow {
     font-family: 'Fraunces', serif;
     font-weight: 700;
     color: var(--dark-cyan);
+    padding: 2rem 1rem 2rem 0;
+    font-size: 2rem;
 }
 
 .pricebefore {
     font-family: 'Montserrat', sans-serif;
     text-decoration: line-through;
     font-weight: 500;
+    position: relative;
+    top: -7px;
 }
 
 .content button {
@@ -83,6 +93,9 @@ h1 {
     font-weight: 700;
     color: var(--white);
     background-color: var(--dark-cyan);
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    border: none;
 }
 
 .content button:hover {
