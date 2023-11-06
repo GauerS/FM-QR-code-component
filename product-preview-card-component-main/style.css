@@ -31,9 +31,12 @@ body {
 } */
 
 .image img {
-    width: 300px;
+    /* width: 300px; */
+    content: url(./images/image-product-desktop-scaled.jpg);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .content {
@@ -100,4 +103,23 @@ h1 {
 
 .content button:hover {
     background-color: var(--very-dark-blue);
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        display: grid;
+        grid-template-rows: 240px auto;
+        grid-template-columns: 343px;
+        border-radius: 10px;
+        background-color: var(--white);
+    }
+
+    .image img {
+        width: 343px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        content: url(./images/image-product-mobile-scaled.jpg);
+    }
 }
