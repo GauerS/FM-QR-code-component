@@ -44,98 +44,103 @@ body {
     text-align: center;
 }
 
-.container figure {
-    margin: 0;
+.container {
+    figure {
+        margin: 0;
+    }
+
+    figure img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    h1 {
+        font-weight: 900;
+        color: var(--dark-blue);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .plan {
+        background-color: var(--very-pale-blue);
+        border-radius: .75rem;
+        padding: 1.5rem;
+    }
+
+    button {
+        font-weight: 700;
+        border: 0;
+        font-size: 16px;
+    }
+
+    .proceed {
+        background-color: var(--bright-blue);
+        color: var(--very-pale-blue);
+        border-radius: .75rem;
+        box-shadow: var(--dark-blue) 0 1rem 3rem -1rem;
+        padding: 1rem;
+    }
+
+    .proceed:hover {
+        background-color: var(--hover-color);
+        cursor: pointer;
+    }
+
+    .cancel {
+        background-color: transparent;
+        color: var(--desaturated-blue);
+        margin-bottom: 3rem;
+    }
+
+    .cancel:hover {
+        cursor: pointer;
+        color: var(--dark-blue);
+    }
 }
 
-.container figure img {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
+.plan {
+    img {
+        float: left;
+        margin-right: 1rem;
+    }
 
-.container h1 {
-    font-weight: 900;
-    color: var(--dark-blue);
-    margin-top: 0;
-    margin-bottom: 0;
-}
+    .planname {
+        float: left;
+        font-weight: 900;
+        color: var(--dark-blue);
+    }
 
-.container p {
-    font-weight: 500;
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
+    .price {
+        float: left;
+    }
 
-.container .plan {
-    background-color: var(--very-pale-blue);
-    border-radius: .75rem;
-    padding: 1.5rem;
-}
+    a {
+        float: right;
+    }
 
-.plan img {
-    float: left;
-    margin-right: 1rem;
-}
+    a:link {
+        color: var(--bright-blue);
+    }
 
-.plan .planname {
-    float: left;
-    font-weight: 900;
-    color: var(--dark-blue);
-}
+    a:visited {
+        color: var(--bright-blue);
+    }
 
-.plan .price {
-    float: left;
-}
+    a:hover {
+        color: var(--hover-color);
+        cursor: pointer;
+        text-decoration: none;
+    }
 
-.plan a {
-    float: right;
-}
+    a:active {
+        color: var(--bright-blue);
+    }
 
-.plan a:link {
-    color: var(--bright-blue);
-}
-
-.plan a:visited {
-    color: var(--bright-blue);
-}
-
-.plan a:hover {
-    color: var(--hover-color);
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.plan a:active {
-    color: var(--bright-blue);
-}
-
-.container button {
-    font-weight: 700;
-    border: 0;
-    font-size: 16px;
-}
-
-.container .proceed {
-    background-color: var(--bright-blue);
-    color: var(--very-pale-blue);
-    border-radius: .75rem;
-    box-shadow: var(--dark-blue) 0 1rem 3rem -1rem;
-    padding: 1rem;
-}
-
-.container .proceed:hover {
-    background-color: var(--hover-color);
-    cursor: pointer;
-}
-
-.container .cancel {
-    background-color: transparent;
-    color: var(--desaturated-blue);
-    margin-bottom: 3rem;
-}
-
-.container .cancel:hover {
-    cursor: pointer;
-    color: var(--dark-blue);
 }
