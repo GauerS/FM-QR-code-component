@@ -14,7 +14,6 @@
 body {
     /* width: 1440px;
     height: 900px; */
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +25,9 @@ body {
     margin: 0;
     font-family: 'Red Hat Display', sans-serif;
     min-height: 100dvh;
+    /*test*/
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .container {
@@ -59,11 +61,12 @@ body {
         color: var(--dark-blue);
         margin-top: 0;
         margin-bottom: 0;
+        font-size: 2rem;
     }
 
     p {
         font-weight: 500;
-        font-size: 16px;
+        /* font-size: 16px; */
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -143,4 +146,19 @@ body {
         color: var(--bright-blue);
     }
 
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        max-width: 327px;
+    }
+
+    figure>img {
+        width: 327px;
+    }
+
+    .container>*:not(figure) {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
